@@ -1,0 +1,422 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: white;
+    line-height: 1.6;
+}
+
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 35px;
+}
+
+.nav-btn button {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    height: 35px;
+    width: 130px;
+    border-color: blue;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 35px;
+}
+
+
+
+/* Hero Section */
+
+.banner {
+    background-image: 
+    linear-gradient(to right, rgba(21, 5, 5, 0.615), rgba(43, 27, 22, 0)),
+    url(./images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.banner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.banner-content h1 {
+    margin-bottom: 20px;
+    font-size: 64px;
+    font-weight: 800;
+    color: white;
+}
+
+.banner-content p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 45px;
+    text-align: center;
+    color: white;
+}
+
+.banner-content button {
+    border-radius: 5px;
+    background-color: blue;
+    border-color: blue;
+    color: white;
+    padding: 10px 30px;
+    
+    cursor: pointer;
+}
+
+
+
+
+/* Speakers Section */
+
+.speakers {
+    padding: 80px 60px;
+}
+
+.speakers h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.speaker-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.speaker-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+
+.speaker-card img {
+    width: 100%;
+    display: block;
+}
+
+.speaker-info {
+    padding: 20px;
+}
+
+.track {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.speaker-info h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+}
+
+.speaker-info p:last-child {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+
+
+/* Secure your Spor Section */
+
+.pricing {
+    padding: 80px 60px;
+    background-color: white;
+}
+
+.pricing h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.pricing-subtitle {
+    text-align: center;
+    color: #6b7280;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.pricing-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.pricing-card h4 {
+    color: #2563eb;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.pricing-card h2 {
+    text-align: left;
+    font-size: 42px;
+    margin: 0;
+}
+
+.pricing-card h5 {
+    color: gray;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+.pricing-card ul {
+    padding-left: 20px;
+    margin-bottom: 35px;
+}
+
+.pricing-card li {
+    margin-bottom: 12px;
+    color: #374151;
+}
+
+.primary-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Card */
+
+.featured {
+    background-color: black;
+    color: white;
+}
+
+.featured h4,
+.featured h5,
+.featured li {
+    color: white;
+}
+
+.featured .primary-btn {
+    background-color: white;
+    color: #2563eb;
+}
+
+
+
+
+
+/* ===========================
+   Why Attend Section - Dark Theme
+=========================== */
+
+.why-attend {
+    text-align: center;
+    padding: 80px 20px;
+    background: #0f172a;
+    /* Navy/Dark background */
+}
+
+.why-attend h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #f9fafb;
+    /* Light text */
+}
+
+.why-attend p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    /* Muted gray */
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Grid Layout */
+.attend-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Card Design */
+.attend-card {
+    background: #1e293b;
+    /* Dark card */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+    /* Blue glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attend-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.6);
+}
+
+.attend-card h3 {
+    font-size: 1.3rem;
+    margin: 15px 0 10px;
+    color: #f9fafb;
+}
+
+.attend-card p {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}
+
+/* Icon Circle */
+.icon-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #2e3a4f;
+    /* Dark navy circle for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.6);
+    /* Blue glow */
+}
+
+/* Icon Image */
+.icon-box img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    /* keeps proportions */
+    filter: none;
+    /* keep original glow colors */
+}
+
+/* CTA Section */
+.cta {
+    margin-top: 50px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #f9fafb;
+}
+
+.cta .btn {
+    background: #2563eb;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta .btn:hover {
+    background: #1e40af;
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .attend-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+/* Footer Section */
+
+.footer {
+    background-color: #111827;
+    padding: 50px 60px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 35px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #374151;
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #d1d5db;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.made-with-love {
+    color: #9ca3af;
+    font-size: 14px;
+}
